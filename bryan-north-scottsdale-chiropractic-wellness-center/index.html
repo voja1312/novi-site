@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Scottsdale Chiropractic Wellness Center | Dr. Bryan Siegel</title>
+    <meta name="description" content="Dr. Bryan Siegel specializes in eliminating allergies and digestive issues with Advanced Pain Elimination Care. Natural, non-invasive treatments in North Scottsdale.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            /* Healthcare/Wellness color palette - Calming blues and healing greens */
+            --primary-color: #4A8FE7; /* Tranquil blue - primary brand color */
+            --secondary-color: #3EB489; /* Healing green - secondary accent */
+            --accent-color: #1C5D99; /* Deep trust blue - for CTAs and highlights */
+            --text-primary: #2A3842; /* Deep slate - main text */
+            --text-secondary: #546A7B; /* Muted blue-gray - secondary text */
+            --background-light: #F8FCFF; /* Airy blue-white - light backgrounds */
+            --background-off: #EDF5FC; /* Soft blue tone - offset sections */
+            --success-color: #4CAF50; /* Success messages */
+            --warning-color: #FF9800; /* Warnings */
+            --error-color: #E57373; /* Errors */
+            
+            /* Spacing system based on 8px grid */
+            --space-xs: 0.5rem; /* 8px */
+            --space-sm: 1rem; /* 16px */
+            --space-md: 1.5rem; /* 24px */
+            --space-lg: 2rem; /* 32px */
+            --space-xl: 3rem; /* 48px */
+            --space-xxl: 4rem; /* 64px */
+            
+            /* Animation system */
+            --transition-fast: 0.2s ease;
+            --transition-standard: 0.3s ease;
+            --transition-slow: 0.5s ease;
+            
+            /* Border radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+            
+            /* Container widths */
+            --container-sm: 640px;
+            --container-md: 768px;
+            --container-lg: 1024px;
+            --container-xl: 1280px;
+        }
+        
+        /* Base styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.6;
+            background-color: var(--background-light);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.2;
+            margin-bottom: var(--space-sm);
+        }
+        
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            position: relative;
+            margin-bottom: var(--space-lg);
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent-color);
+            border-radius: 2px;
+        }
+        
+        h3 {
+            font-size: clamp(1.35rem, 3vw, 1.8rem);
+        }
+        
+        p {
+            margin-bottom: var(--space-md);
+            color: var(--text-secondary);
+        }
+        
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: var(--transition-standard);
+        }
+        
+        a:hover {
+            color: var(--primary-color);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--radius-md);
+        }
+        
+        button, .btn {
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            transition: var(--transition-standard);
+            border: none;
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: var(--container-xl);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        .section {
+            padding: var(--space-xl) 0;
+            position: relative;
+        }
+        
+        .section--alt {
+            background-color: var(--background-off);
+        }
+        
+        .section__header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto var(--space-xl);
+        }
+        
+        /* Utility classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-sm {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .mb-md {
+            margin-bottom: var(--space-md);
+        }
+        
+        .mb-lg {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            border-radius: var(--radius-md);
+            font-weight: 500;
+            transition: var(--transition-standard);
+            text-align: center;
+        }
+        
+        .btn--primary {
+            background-color: var(--accent-color);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .btn--primary:hover {
+            background-color: #174B80;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn--secondary {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+        }
+        
+        .btn--secondary:hover {
+            background-color: var(--accent-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .btn--large {
+            padding: 1rem 2.25rem;
+            font-size: 1.1rem;
+        }
+        
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-standard);
+            padding: var(--space-sm) 0;
+            backdrop-filter: blur(8px);
+        }
+        
+        .header--scrolled {
+            padding: var(--space-xs) 0;
+            box-shadow: var(--shadow-md);
+        }
+        
+        .header__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            z-index: 1001;
+        }
+        
+        .logo__text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            line-height: 1;
+        }
+        
+        .logo__tagline {
+            display: block;
+            font-size: 0.75rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: var(--text-secondary);
+        }
+        
+        .nav__toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+        
+        .nav__list {
+            display: flex;
+            list-style: none;
+            gap: var(--space-md);
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        
+        .nav__item {
+            position: relative;
+        }
+        
+        .nav__link {
+            color: var(--text-primary);
+            font-weight: 500;
+            font-size: 0.95rem;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+        
+        .nav__link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: var(--transition-standard);
+        }
+        
+        .nav__link:hover, .nav__link--active {
+            color: var(--accent-color);
+        }
+        
+        .nav__link:hover::after, .nav__link--active::after {
+            width: 100%;
+        }
+        
+        .nav__cta {
+            margin-left: var(--space-md);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding-top: calc(76px + var(--space-xxl));
+            padding-bottom: var(--space-xxl);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0MCIgaGVpZ2h0PSI3NjUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IHgxPSI3MS42NCUiIHkxPSIyNS4yMDclIiB4Mj0iNzUuMDAlIiB5Mj0iNTAuOTc5JSIgaWQ9ImEiPjxzdG9wIHN0b3AtY29sb3I9IiNGRkYiIHN0b3Atb3BhY2l0eT0iLjA1IiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRiIgc3RvcC1vcGFjaXR5PSIuMDEiIG9mZnNldD0iMTAwJSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxwYXRoIGQ9Ik0wIDBoMTQ0MHY3NjVIMHoiIGZpbGw9InVybCgjYSkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgb3BhY2l0eT0iLjMiLz48L3N2Zz4=');
+            background-size: cover;
+            opacity: 0.2;
+        }
+        
+        .hero__container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .hero__subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.4rem);
+            font-weight: 400;
+            margin-bottom: var(--space-md);
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 800px;
+        }
+        
+        .hero__title {
+            color: white;
+            margin-bottom: var(--space-md);
+            max-width: 1000px;
+        }
+        
+        .hero__btns {
+            display: flex;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        /* Services Section */
+        .services__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-standard);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            z-index: 2;
+            transition: var(--transition-standard);
+        }
+        
+        .service-card:hover::before {
+            height: 8px;
+        }
+        
+        .service-card__icon {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+            color: var(--primary-color);
+            transition: var(--transition-standard);
+        }
+        
+        .service-card:hover .service-card__icon {
+            color: var(--accent-color);
+            transform: scale(1.1);
+        }
+        
+        .service-card__title {
+            font-size: 1.35rem;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .service-card__text {
+            color: var(--text-secondary);
+            margin-bottom: var(--space-md);
+            flex-grow: 1;
+        }
+        
+        .service-card__link {
+            color: var(--accent-color);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transform: translateX(0);
+            transition: var(--transition-standard);
+        }
+        
+        .service-card__link i {
+            margin-left: 0.3rem;
+            transition: var(--transition-standard);
+        }
+        
+        .service-card__link:hover {
+            transform: translateX(4px);
+        }
+        
+        .service-card__link:hover i {
+            transform: translateX(3px);
+        }
+        
+        /* About Section */
+        .about {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+        
+        .about__image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .about__image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            transition: var(--transition-standard);
+            transform: scale(1.01);
+        }
+        
+        .about__image-wrapper:hover .about__image {
+            transform: scale(1.05);
+        }
+        
+        .about__content {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .about__title {
+            margin-bottom: var(--space-md);
+        }
+        
+        .about__title::after {
+            left: 0;
+            transform: none;
+        }
+        
+        .about__subtitle {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .about__text {
+            margin-bottom: var(--space-md);
+        }
+        
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            margin: var(--space-md) 0;
+        }
+        
+        .credential {
+            background-color: rgba(74, 143, 231, 0.1);
+            color: var(--accent-color);
+            padding: 0.4rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+        
+        .credential i {
+            margin-right: 0.5rem;
+        }
+        
+        /* Unique Approach Section */
+        .approach {
+            background-color: var(--background-off);
+            position: relative;
+        }
+        
+        .approach__content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .approach__steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+        }
+        
+        .step-card {
+            background-color: white;
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-md);
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .step-card__number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: rgba(74, 143, 231, 0.1);
+            position: absolute;
+            top: -15px;
+            right: 10px;
+            z-index: 0;
+        }
+        
+        .step-card__icon {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-card__title {
+            font-size: 1.3rem;
+            margin-bottom: var(--space-sm);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step-card__text {
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            padding: var(--space-xxl) 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials__container {
+            max-width: 1000px;
+        }
+        
+        .testimonials__carousel {
+            position: relative;
+            padding: 2rem 0;
+        }
+        
+        .testimonial {
+            background-color: white;
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            display: none;
+            opacity: 0;
+            transition: opacity var(--transition-slow);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial--active {
+            display: block;
+            opacity: 1;
+        }
+        
+        .testimonial__quote {
+            font-size: 1.15rem;
+            font-style: italic;
+            position: relative;
+            padding: 0 var(--space-md);
+            margin-bottom: var(--space-lg);
+            color: var(--text-primary);
+        }
+        
+        .testimonial__quote::before {
+            content: """;
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: var(--primary-color);
+            opacity: 0.2;
+            position: absolute;
+            top: -2rem;
+            left: -1rem;
+        }
+        
+        .testimonial__author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial__author-info {
+            margin-left: var(--space-sm);
+        }
+        
+        .testimonial__name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+        
+        .testimonial__role {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .testimonial__stars {
+            color: #FFD700;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .testimonials__dots {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: var(--space-lg);
+        }
+        
+        .testimonials__dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(74, 143, 231, 0.2);
+            cursor: pointer;
+            transition: var(--transition-standard);
+        }
+        
+        .testimonials__dot--active {
+            background-color: var(--primary-color);
+            transform: scale(1.2);
+        }
+        
+        /* Contact Section */
+        .contact {
+            position: relative;
+            background-color: var(--background-off);
+        }
+        
+        .contact__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+            align-items: start;
+        }
+        
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+        
+        .contact__title::after {
+            left: 0;
+            transform: none;
+        }
+        
+        .contact__method {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+        }
+        
+        .contact__method-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 0.2rem;
+        }
+        
+        .contact__method-content {
+            flex: 1;
+        }
+        
+        .contact__method-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .contact__social {
+            display: flex;
+            gap: var(--space-sm);
+            margin-top: var(--space-md);
+        }
+        
+        .contact__social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-standard);
+        }
+        
+        .contact__social-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+        
+        .contact__form {
+            background-color: white;
+            padding: var(--space-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .form__group {
+            margin-bottom: var(--space-md);
+        }
+        
+        .form__label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        
+        .form__input, .form__textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #E0E0E0;
+            border-radius: var(--radius-md);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition-standard);
+        }
+        
+        .form__input:focus, .form__textarea:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(74, 143, 231, 0.1);
+        }
+        
+        .form__textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form__input--error {
+            border-color: var(--error-color);
+        }
+        
+        .form__error {
+            color: var(--error-color);
+            font-size: 0.85rem;
+            margin-top: 0.4rem;
+            display: none;
+        }
+        
+        .form__error--visible {
+            display: block;
+        }
+        
+        .form__submit {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--accent-color);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: var(--transition-standard);
+        }
+        
+        .form__submit:hover {
+            background-color: #174B80;
+            transform: translateY(-2px);
+        }
+        
+        .contact__map {
+            margin-top: var(--space-lg);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            height: 300px;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #15324B;
+            color: white;
+            padding: var(--space-xl) 0 var(--space-lg);
+        }
+        
+        .footer__container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .footer__logo {
+            display: inline-block;
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__logo-text {
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .footer__description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: var(--space-md);
+        }
+        
+        .footer__heading {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: var(--space-md);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer__heading::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+        
+        .footer__links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .footer__link-item {
+            margin-bottom: 0.6rem;
+        }
+        
+        .footer__link {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition-standard);
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .footer__link:hover {
+            color: white;
+            transform: translateX(3px);
+        }
+        
+        .footer__link i {
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+        }
+        
+        .footer__contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 0.8rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .footer__contact-icon {
+            margin-right: 0.8rem;
+            color: var(--primary-color);
+        }
+        
+        .footer__bottom {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-md);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition-standard);
+            box-shadow: var(--shadow-md);
+            z-index: 99;
+        }
+        
+        .back-to-top--visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+        
+        /* Mobile navigation */
+        @media (max-width: 1023px) {
+            .nav__toggle {
+                display: block;
+            }
+            
+            .nav {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 80%;
+                max-width: 400px;
+                height: 100vh;
+                background-color: white;
+                box-shadow: var(--shadow-lg);
+                transition: var(--transition-standard);
+                padding: 5rem var(--space-lg) var(--space-lg);
+                z-index: 1000;
+                overflow-y: auto;
+            }
+            
+            .nav--open {
+                right: 0;
+            }
+            
+            .nav__list {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-sm);
+            }
+            
+            .nav__item {
+                width: 100%;
+            }
+            
+            .nav__link {
+                display: block;
+                padding: var(--space-sm) 0;
+                font-size: 1.1rem;
+            }
+            
+            .nav__cta {
+                margin: var(--space-md) 0 0;
+                width: 100%;
+                text-align: center;
+            }
+            
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 999;
+                opacity: 0;
+                visibility: hidden;
+                transition: var(--transition-standard);
+            }
+            
+            .overlay--visible {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 1024px) {
+            .about__container,
+            .contact__container {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+            
+            .about__image-wrapper {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .hero__btns {
+                flex-direction: column;
+                width: 100%;
+                max-width: 400px;
+            }
+            
+            .hero__btns .btn {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .section {
+                padding: var(--space-lg) 0;
+            }
+            
+            .hero {
+                padding-top: calc(76px + var(--space-xl));
+                padding-bottom: var(--space-xl);
+            }
+            
+            .testimonial {
+                padding: var(--space-lg);
+            }
+            
+            .testimonial__quote {
+                font-size: 1rem;
+            }
+            
+            .service-card {
+                padding: var(--space-md);
+            }
+            
+            .contact__form {
+                padding: var(--space-lg);
+            }
+            
+            .logo__text {
+                font-size: 1rem;
+            }
+            
+            .back-to-top {
+                width: 40px;
+                height: 40px;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <span class="logo__text">North Scottsdale Chiropractic<span class="logo__tagline">Wellness Center</span></span>
+            </a>
+            
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link nav__link--active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#approach" class="nav__link">Our Approach</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                    <li class="nav__item nav__cta">
+                        <a href="#contact" class="btn btn--primary">Schedule Consultation</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="overlay" id="overlay"></div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container hero__container">
+            <h1 class="hero__title">Reclaim Your Health Naturally at North Scottsdale Chiropractic Wellness Center</h1>
+            <p class="hero__subtitle">Dr. Bryan Siegel specializes in non-invasive solutions for allergies, digestive issues, and chronic pain without medications or injections</p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary btn--large">Schedule a Consultation</a>
+                <a href="#approach" class="btn btn--secondary btn--large">Discover Our Approach</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services section" id="services">
+        <div class="container">
+            <div class="section__header">
+                <h2>Our Specialized Services</h2>
+                <p>We offer innovative, natural solutions for complex health issues that conventional medicine often struggles to address</p>
+            </div>
+            
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-allergies"></i>
+                    </div>
+                    <h3 class="service-card__title">Allergy Elimination</h3>
+                    <p class="service-card__text">Our unique approach helps eliminate broad-spectrum allergies without medications, shots, or painful testing procedures.</p>
+                    <a href="#contact" class="service-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="service-card__title">Digestive Health Solutions</h3>
+                    <p class="service-card__text">Address the root causes of digestive issues like IBS, bloating, and food sensitivities with our natural protocols.</p>
+                    <a href="#contact" class="service-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3 class="service-card__title">Advanced Pain Elimination</h3>
+                    <p class="service-card__text">Our proprietary Advanced Pain Elimination Care approach offers relief without relying on medications or invasive procedures.</p>
+                    <a href="#contact" class="service-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-spine"></i>
+                    </div>
+                    <h3 class="service-card__title">Chiropractic Wellness Care</h3>
+                    <p class="service-card__text">Gentle, effective adjustments to restore proper nervous system function and support whole-body health.</p>
+                    <a href="#contact" class="service-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="service-card__title">Personalized Treatment Plans</h3>
+                    <p class="service-card__text">Each patient receives a customized care plan addressing their unique health challenges and wellness goals.</p>
+                    <a href="#contact" class="service-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3 class="service-card__title">Holistic Health Coaching</h3>
+                    <p class="service-card__text">Learn practical lifestyle strategies to maintain your results and optimize your health for the long term.</p>
+                    <a href="#contact" class="service-card__link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about section section--alt" id="about">
+        <div class="container about__container">
+            <div class="about__image-wrapper">
+                <img src="https://media.licdn.com/dms/image/v2/C5603AQHuIaPdF9EGLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517665682932?e=1750896000&v=beta&t=ngZn7mYIGYDUZEzHQ-_Oi62Er3wPdfU59Frab_cgA7g" alt="Dr. Bryan Siegel" class="about__image">
+            </div>
+            
+            <div class="about__content">
+                <span class="about__subtitle">Meet Your Doctor</span>
+                <h2 class="about__title">Dr. Bryan C. Siegel</h2>
+                <p class="about__text">Dr. Siegel is the founder of both the Food Allergy Center of North Scottsdale and North Scottsdale Chiropractic Wellness Center, bringing decades of experience in natural healing approaches to the community.</p>
+                <p class="about__text">Unlike conventional practitioners, Dr. Siegel specializes in addressing the root causes of allergies, digestive disorders, and chronic pain without relying on medications or invasive procedures. His unique approach has helped thousands of patients overcome health challenges that traditional medicine couldn't solve.</p>
+                
+                <div class="credentials">
+                    <span class="credential"><i class="fas fa-certificate"></i> Board Certified Chiropractor</span>
+                    <span class="credential"><i class="fas fa-certificate"></i> Allergy Specialist</span>
+                    <span class="credential"><i class="fas fa-certificate"></i> Natural Health Expert</span>
+                </div>
+                
+                <a href="#contact" class="btn btn--primary">Schedule With Dr. Siegel</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Unique Approach Section -->
+    <section class="approach section" id="approach">
+        <div class="container">
+            <div class="approach__content">
+                <h2>Advanced Pain Elimination Care</h2>
+                <p>Our unique approach addresses the root causes of health issues rather than just masking symptoms. We create individualized treatment plans that restore normal function naturally.</p>
+            </div>
+            
+            <div class="approach__steps">
+                <div class="step-card">
+                    <div class="step-card__number">1</div>
+                    <div class="step-card__icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="step-card__title">Comprehensive Assessment</h3>
+                    <p class="step-card__text">We begin with a thorough evaluation to understand your complete health history, current challenges, and specific wellness goals.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-card__number">2</div>
+                    <div class="step-card__icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="step-card__title">Root Cause Analysis</h3>
+                    <p class="step-card__text">Rather than focusing on symptoms, we identify the underlying factors contributing to your health challenges.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-card__number">3</div>
+                    <div class="step-card__icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="step-card__title">Customized Treatment Plan</h3>
+                    <p class="step-card__text">We develop a personalized protocol addressing your specific needs using non-invasive, natural approaches.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-card__number">4</div>
+                    <div class="step-card__icon">
+                        <i class="fas fa-hands-holding-circle"></i>
+                    </div>
+                    <h3 class="step-card__title">Gentle, Effective Care</h3>
+                    <p class="step-card__text">Our treatments are comfortable, safe, and designed to work with your body's natural healing abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container testimonials__container">
+            <div class="section__header">
+                <h2>Patient Success Stories</h2>
+                <p>Hear from our patients who have experienced life-changing results with our unique approach to natural healing</p>
+            </div>
+            
+            <div class="testimonials__carousel" id="testimonialCarousel">
+                <div class="testimonial testimonial--active" data-index="0">
+                    <div class="testimonial__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial__quote">
+                        After suffering from food allergies for over a decade and seeing countless specialists, Dr. Siegel's approach was revolutionary. Within three months, I was able to eat foods I hadn't enjoyed in years without any reactions. His care has truly changed my life.
+                    </blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__author-info">
+                            <div class="testimonial__name">Sarah M.</div>
+                            <div class="testimonial__role">Allergy Patient</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial" data-index="1">
+                    <div class="testimonial__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial__quote">
+                        I had been struggling with IBS for years, and traditional medicine only offered symptom management. Dr. Siegel took the time to identify the root causes and developed a plan that finally gave me relief. For the first time in years, I can enjoy meals without anxiety or discomfort.
+                    </blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__author-info">
+                            <div class="testimonial__name">Michael T.</div>
+                            <div class="testimonial__role">Digestive Health Patient</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial" data-index="2">
+                    <div class="testimonial__stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial__quote">
+                        After a car accident, I had chronic back and neck pain that multiple doctors couldn't resolve. Dr. Siegel's Advanced Pain Elimination approach addressed issues that no one else found. His holistic treatment not only relieved my pain but improved my overall health and energy levels.
+                    </blockquote>
+                    <div class="testimonial__author">
+                        <div class="testimonial__author-info">
+                            <div class="testimonial__name">Jennifer K.</div>
+                            <div class="testimonial__role">Pain Management Patient</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonials__dots">
+                    <span class="testimonials__dot testimonials__dot--active" data-index="0"></span>
+                    <span class="testimonials__dot" data-index="1"></span>
+                    <span class="testimonials__dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container contact__container">
+            <div class="contact__info">
+                <h2 class="contact__title">Get in Touch</h2>
+                <p>We're here to answer your questions and help you start your journey toward better health. Schedule a consultation with Dr. Siegel today.</p>
+                
+                <div class="contact__method">
+                    <div class="contact__method-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact__method-content">
+                        <h3 class="contact__method-title">Visit Our Office</h3>
+                        <p>7350 E. Stetson Dr., Suite 328<br>Scottsdale, AZ 85251</p>
+                    </div>
+                </div>
+                
+                <div class="contact__method">
+                    <div class="contact__method-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact__method-content">
+                        <h3 class="contact__method-title">Call Us</h3>
+                        <p>(480) 951-4483</p>
+                    </div>
+                </div>
+                
+                <div class="contact__method">
+                    <div class="contact__method-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact__method-content">
+                        <h3 class="contact__method-title">Office Hours</h3>
+                        <p>Monday - Friday: 9am - 5pm<br>Saturday: By appointment only<br>Sunday: Closed</p>
+                    </div>
+                </div>
+                
+                <div class="contact__social">
+                    <a href="#" class="contact__social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="contact__social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="contact__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="contact__social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+                
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.944149773983!2d-111.92799568479851!3d33.49915158076036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b0bbdbed1f1cd%3A0xfab14dd1d7bf6f9a!2s7350%20E%20Stetson%20Dr%20%23328%2C%20Scottsdale%2C%20AZ%2085251!5e0!3m2!1sen!2sus!4v1653576273992!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="contact__form-wrapper">
+                <form class="contact__form" id="contactForm">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full Name *</label>
+                        <input type="text" id="name" name="name" class="form__input" required>
+                        <div class="form__error" id="nameError">Please enter your full name</div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email Address *</label>
+                        <input type="email" id="email" name="email" class="form__input" required>
+                        <div class="form__error" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="phone" class="form__label">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" class="form__input" required>
+                        <div class="form__error" id="phoneError">Please enter a valid phone number</div>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="service" class="form__label">Service of Interest</label>
+                        <select id="service" name="service" class="form__input">
+                            <option value="">Select a Service</option>
+                            <option value="allergy">Allergy Elimination</option>
+                            <option value="digestive">Digestive Health Solutions</option>
+                            <option value="pain">Advanced Pain Elimination</option>
+                            <option value="chiropractic">Chiropractic Wellness Care</option>
+                            <option value="other">Other Services</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form__group">
+                        <label for="message" class="form__label">Your Health Concerns</label>
+                        <textarea id="message" name="message" class="form__textarea" placeholder="Please briefly describe your health concerns or questions..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="form__submit">Schedule Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a href="#" class="footer__logo">
+                    <span class="footer__logo-text">North Scottsdale Chiropractic</span>
+                </a>
+                <p class="footer__description">Providing natural solutions for allergies, digestive health, and chronic pain without medications or invasive procedures.</p>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__heading">Quick Links</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#home" class="footer__link"><i class="fas fa-chevron-right"></i> Home</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#services" class="footer__link"><i class="fas fa-chevron-right"></i> Services</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#about" class="footer__link"><i class="fas fa-chevron-right"></i> About Dr. Siegel</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#approach" class="footer__link"><i class="fas fa-chevron-right"></i> Our Approach</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#testimonials" class="footer__link"><i class="fas fa-chevron-right"></i> Success Stories</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#contact" class="footer__link"><i class="fas fa-chevron-right"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__heading">Our Services</h3>
+                <ul class="footer__links">
+                    <li class="footer__link-item">
+                        <a href="#services" class="footer__link"><i class="fas fa-chevron-right"></i> Allergy Elimination</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#services" class="footer__link"><i class="fas fa-chevron-right"></i> Digestive Health Solutions</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#services" class="footer__link"><i class="fas fa-chevron-right"></i> Advanced Pain Elimination</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#services" class="footer__link"><i class="fas fa-chevron-right"></i> Chiropractic Wellness Care</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#services" class="footer__link"><i class="fas fa-chevron-right"></i> Personalized Treatment Plans</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="footer__col">
+                <h3 class="footer__heading">Contact Info</h3>
+                <div class="footer__contact-item">
+                    <i class="fas fa-map-marker-alt footer__contact-icon"></i>
+                    <span>7350 E. Stetson Dr., Suite 328<br>Scottsdale, AZ 85251</span>
+                </div>
+                <div class="footer__contact-item">
+                    <i class="fas fa-phone-alt footer__contact-icon"></i>
+                    <span>(480) 951-4483</span>
+                </div>
+                <div class="footer__contact-item">
+                    <i class="fas fa-envelope footer__contact-icon"></i>
+                    <span>info@northscottsdalechiropractic.com</span>
+                </div>
+                <div class="footer__contact-item">
+                    <i class="fas fa-clock footer__contact-icon"></i>
+                    <span>Mon-Fri: 9am - 5pm<br>Sat: By appointment</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; <span id="currentYear">2023</span> North Scottsdale Chiropractic Wellness Center. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <script>
+        // Initialize dynamic year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const nav = document.getElementById('nav');
+        const overlay = document.getElementById('overlay');
+        
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('nav--open');
+            overlay.classList.toggle('overlay--visible');
+            document.body.style.overflow = nav.classList.contains('nav--open') ? 'hidden' : '';
+        });
+        
+        overlay.addEventListener('click', () => {
+            nav.classList.remove('nav--open');
+            overlay.classList.remove('overlay--visible');
+            document.body.style.overflow = '';
+        });
+        
+        // Close mobile menu when clicking a nav link
+        const navLinks = document.querySelectorAll('.nav__link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('nav--open');
+                overlay.classList.remove('overlay--visible');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Sticky Header on Scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+        
+        // Back to Top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('back-to-top--visible');
+            } else {
+                backToTop.classList.remove('back-to-top--visible');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Testimonial Carousel
+        const testimonials = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.testimonials__dot');
+        let currentTestimonial = 0;
+        let testimonialInterval;
+        
+        const showTestimonial = (index) => {
+            testimonials.forEach(t => t.classList.remove('testimonial--active'));
+            dots.forEach(d => d.classList.remove('testimonials__dot--active'));
+            
+            testimonials[index].classList.add('testimonial--active');
+            dots[index].classList.add('testimonials__dot--active');
+            
+            currentTestimonial = index;
+        };
+        
+        const nextTestimonial = () => {
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            showTestimonial(currentTestimonial);
+        };
+        
+        // Auto advance testimonials
+        const startTestimonialInterval = () => {
+            testimonialInterval = setInterval(nextTestimonial, 5000);
+        };
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                clearInterval(testimonialInterval);
+                showTestimonial(index);
+                startTestimonialInterval();
+            });
+        });
+        
+        startTestimonialInterval();
+        
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Name validation
+            const nameInput = document.getElementById('name');
+            const nameError = document.getElementById('nameError');
+            
+            if (!nameInput.value.trim()) {
+                nameInput.classList.add('form__input--error');
+                nameError.classList.add('form__error--visible');
+                isValid = false;
+            } else {
+                nameInput.classList.remove('form__input--error');
+                nameError.classList.remove('form__error--visible');
+            }
+            
+            // Email validation
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!emailRegex.test(emailInput.value)) {
+                emailInput.classList.add('form__input--error');
+                emailError.classList.add('form__error--visible');
+                isValid = false;
+            } else {
+                emailInput.classList.remove('form__input--error');
+                emailError.classList.remove('form__error--visible');
+            }
+            
+            // Phone validation
+            const phoneInput = document.getElementById('phone');
+            const phoneError = document.getElementById('phoneError');
+            const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+            
+            if (!phoneRegex.test(phoneInput.value)) {
+                phoneInput.classList.add('form__input--error');
+                phoneError.classList.add('form__error--visible');
+                isValid = false;
+            } else {
+                phoneInput.classList.remove('form__input--error');
+                phoneError.classList.remove('form__error--visible');
+            }
+            
+            if (isValid) {
+                // Form submission simulation - would be replaced with actual form handling
+                const submitButton = contactForm.querySelector('.form__submit');
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitButton.disabled = true;
+                
+                // Simulate form submission
+                setTimeout(() => {
+                    contactForm.reset();
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    
+                    setTimeout(() => {
+                        submitButton.innerHTML = 'Schedule Consultation';
+                        submitButton.disabled = false;
+                    }, 2000);
+                }, 1500);
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Active menu link highlighting on scroll
+        const sections = document.querySelectorAll('section[id]');
+        
+        function highlightNavLink() {
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - header.offsetHeight;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('nav__link--active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('nav__link--active');
+                        }
+                    });
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', highlightNavLink);
+    </script>
+</body>
+</html>
