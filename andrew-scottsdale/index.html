@@ -1,0 +1,1976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posture & Scoliosis Institute | Dr. Andrew Kellogg</title>
+    <meta name="description" content="Scottsdale's premier chiropractic care specializing in posture correction and scoliosis treatment. Schedule your consultation with Dr. Andrew Kellogg today.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables - Healthcare/Wellness Palette */
+        :root {
+            /* Primary Colors */
+            --primary-light: #63c6c0;
+            --primary: #39a8a2;
+            --primary-dark: #1f7671;
+            
+            /* Secondary Colors */
+            --secondary-light: #f0f9f8;
+            --secondary: #d9eeed;
+            --secondary-dark: #baded9;
+            
+            /* Accent Colors */
+            --accent: #5271ff;
+            --accent-dark: #3152d9;
+            
+            /* Neutral Colors */
+            --neutral-100: #ffffff;
+            --neutral-200: #f7f9f9;
+            --neutral-300: #e9eeee;
+            --neutral-400: #bbc5c4;
+            --neutral-500: #8a9594;
+            --neutral-600: #5a6565;
+            --neutral-700: #3c4343;
+            --neutral-800: #242828;
+            --neutral-900: #121414;
+            
+            /* Functional Colors */
+            --success: #4caf50;
+            --warning: #ff9800;
+            --error: #f44336;
+            
+            /* Spacing System - 8px Grid */
+            --space-xxs: 4px;
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-xxl: 64px;
+            --space-xxxl: 96px;
+            
+            /* Animation Timing */
+            --transition-fast: 0.2s;
+            --transition-base: 0.3s;
+            --transition-slow: 0.5s;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-full: 999px;
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-md: 1.125rem;
+            --font-size-lg: 1.25rem;
+            --font-size-xl: 1.5rem;
+            --font-size-2xl: 1.875rem;
+            --font-size-3xl: 2.25rem;
+            --font-size-4xl: 3rem;
+            --font-size-5xl: 3.75rem;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(18, 20, 20, 0.05);
+            --shadow-md: 0 4px 6px rgba(18, 20, 20, 0.05), 0 1px 3px rgba(18, 20, 20, 0.1);
+            --shadow-lg: 0 10px 15px rgba(18, 20, 20, 0.1), 0 4px 6px rgba(18, 20, 20, 0.05);
+            --shadow-xl: 0 20px 25px rgba(18, 20, 20, 0.1), 0 10px 10px rgba(18, 20, 20, 0.04);
+            
+            /* Container */
+            --container-width: 1200px;
+            --container-padding: var(--space-md);
+        }
+
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--neutral-700);
+            line-height: 1.6;
+            background-color: var(--neutral-100);
+            font-size: var(--font-size-base);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            line-height: 1.3;
+            color: var(--neutral-800);
+            margin-bottom: var(--space-sm);
+        }
+
+        h1 {
+            font-size: var(--font-size-3xl);
+        }
+
+        h2 {
+            font-size: var(--font-size-2xl);
+        }
+
+        h3 {
+            font-size: var(--font-size-xl);
+        }
+
+        p {
+            margin-bottom: var(--space-md);
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color var(--transition-base) ease;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Container System */
+        .container {
+            width: 100%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .section {
+            padding: var(--space-xxl) 0;
+        }
+
+        .section--alt {
+            background-color: var(--secondary-light);
+        }
+
+        /* Grid System */
+        .grid {
+            display: grid;
+            gap: var(--space-md);
+        }
+
+        .grid--2 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid--3 {
+            grid-template-columns: 1fr;
+        }
+
+        .grid--services {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 640px) {
+            .grid--2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .grid--services {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid--3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .grid--services {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--neutral-100);
+            box-shadow: var(--shadow-md);
+            z-index: 100;
+            transition: all var(--transition-base) ease;
+        }
+
+        .header__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-sm) var(--container-padding);
+        }
+
+        .header__logo {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+        }
+
+        .header__logo-icon {
+            margin-right: var(--space-xs);
+            color: var(--primary);
+        }
+
+        .header__nav {
+            display: none;
+        }
+
+        .header__nav-list {
+            display: flex;
+            list-style: none;
+            gap: var(--space-md);
+        }
+
+        .header__nav-link {
+            font-weight: 500;
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color var(--transition-base) ease;
+            position: relative;
+        }
+
+        .header__nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: width var(--transition-base) ease;
+        }
+
+        .header__nav-link:hover::after,
+        .header__nav-link.active::after {
+            width: 100%;
+        }
+
+        .header__cta {
+            display: none;
+        }
+
+        .header__mobile-toggle {
+            background: none;
+            border: none;
+            font-size: var(--font-size-lg);
+            color: var(--primary-dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 350px;
+            height: 100vh;
+            background-color: var(--neutral-100);
+            padding: var(--space-xl) var(--space-md);
+            box-shadow: var(--shadow-xl);
+            transition: right var(--transition-base) ease;
+            z-index: 200;
+            overflow-y: auto;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav__close {
+            position: absolute;
+            top: var(--space-md);
+            right: var(--space-md);
+            background: none;
+            border: none;
+            font-size: var(--font-size-xl);
+            color: var(--neutral-600);
+            cursor: pointer;
+        }
+
+        .mobile-nav__list {
+            list-style: none;
+            margin-top: var(--space-xl);
+        }
+
+        .mobile-nav__item {
+            margin-bottom: var(--space-md);
+        }
+
+        .mobile-nav__link {
+            font-size: var(--font-size-lg);
+            font-weight: 500;
+            display: block;
+            padding: var(--space-xs) 0;
+        }
+
+        .mobile-nav__cta {
+            margin-top: var(--space-lg);
+            width: 100%;
+        }
+
+        @media (min-width: 1024px) {
+            .header__nav {
+                display: block;
+            }
+            
+            .header__cta {
+                display: block;
+            }
+            
+            .header__mobile-toggle {
+                display: none;
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            padding: var(--space-xs) var(--space-md);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base) ease;
+            cursor: pointer;
+            font-size: var(--font-size-sm);
+            border: 2px solid transparent;
+        }
+
+        .btn--primary {
+            background-color: var(--primary);
+            color: var(--neutral-100);
+        }
+
+        .btn--primary:hover {
+            background-color: var(--primary-dark);
+            color: var(--neutral-100);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn--secondary {
+            background-color: transparent;
+            color: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn--secondary:hover {
+            background-color: var(--primary);
+            color: var(--neutral-100);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn--large {
+            padding: var(--space-sm) var(--space-lg);
+            font-size: var(--font-size-base);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: calc(var(--space-xxl) * 2) 0 var(--space-xxl);
+            background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 50%, var(--primary-dark) 100%);
+            color: var(--neutral-100);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            width: 60%;
+            height: 70%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -10%;
+            left: -10%;
+            width: 40%;
+            height: 50%;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero__container {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+            align-items: center;
+        }
+
+        .hero__content {
+            text-align: center;
+        }
+
+        .hero__title {
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            margin-bottom: var(--space-md);
+            color: var(--neutral-100);
+        }
+
+        .hero__subtitle {
+            font-size: var(--font-size-lg);
+            font-weight: 400;
+            margin-bottom: var(--space-lg);
+            opacity: 0.9;
+        }
+
+        .hero__cta-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            justify-content: center;
+        }
+
+        .hero__image {
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            max-width: 90%;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero__image img {
+            transition: transform var(--transition-slow) ease;
+            display: block;
+        }
+
+        .hero__image:hover img {
+            transform: scale(1.03);
+        }
+
+        .hero__image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: var(--radius-lg);
+            box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+        }
+
+        @media (min-width: 640px) {
+            .hero__cta-group {
+                flex-direction: row;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .hero__container {
+                grid-template-columns: 1fr 1fr;
+                text-align: left;
+            }
+            
+            .hero__content {
+                text-align: left;
+            }
+            
+            .hero__title {
+                font-size: var(--font-size-5xl);
+            }
+            
+            .hero__cta-group {
+                justify-content: flex-start;
+            }
+        }
+
+        /* Services Section */
+        .service-card {
+            background-color: var(--neutral-100);
+            border-radius: var(--radius-md);
+            padding: var(--space-lg);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--transition-base) ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 0;
+            background-color: var(--primary);
+            transition: height var(--transition-base) ease;
+            z-index: -1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .service-card:hover::before {
+            height: 100%;
+        }
+
+        .service-card__icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: var(--space-sm);
+            transition: transform var(--transition-base) ease;
+        }
+
+        .service-card:hover .service-card__icon {
+            transform: scale(1.1);
+            color: var(--primary-dark);
+        }
+
+        .service-card__title {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--space-sm);
+            transition: color var(--transition-base) ease;
+        }
+
+        .service-card:hover .service-card__title {
+            color: var(--primary-dark);
+        }
+
+        .service-card__description {
+            color: var(--neutral-600);
+            flex-grow: 1;
+        }
+
+        .service-card__link {
+            margin-top: var(--space-sm);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xxs);
+        }
+
+        .service-card__link i {
+            transition: transform var(--transition-base) ease;
+        }
+
+        .service-card__link:hover i {
+            transform: translateX(4px);
+        }
+
+        /* About Section */
+        .about {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about__container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .about__image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: var(--space-lg);
+        }
+
+        .about__image {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: transform var(--transition-slow) ease;
+        }
+
+        .about__image-wrapper:hover .about__image {
+            transform: scale(1.03);
+        }
+
+        .about__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(31, 118, 113, 0.9) 0%, rgba(31, 118, 113, 0) 100%);
+            padding: var(--space-lg) var(--space-md);
+            color: var(--neutral-100);
+        }
+
+        .about__name {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .about__title {
+            font-size: var(--font-size-sm);
+            opacity: 0.9;
+        }
+
+        .about__content {
+            position: relative;
+        }
+
+        .section__title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-lg);
+        }
+
+        .section__title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .about__highlight {
+            background-color: var(--secondary-light);
+            border-left: 3px solid var(--primary);
+            padding: var(--space-md);
+            margin: var(--space-lg) 0;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+
+        .about__stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .stat {
+            text-align: center;
+            padding: var(--space-md);
+            background-color: var(--neutral-100);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            transition: transform var(--transition-base) ease;
+        }
+
+        .stat:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat__number {
+            font-size: var(--font-size-2xl);
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-xs);
+            font-family: var(--font-heading);
+        }
+
+        .stat__label {
+            font-size: var(--font-size-sm);
+            color: var(--neutral-600);
+        }
+
+        @media (min-width: 1024px) {
+            .about__container {
+                display: grid;
+                grid-template-columns: 0.8fr 1.2fr;
+                gap: var(--space-xl);
+                align-items: center;
+            }
+            
+            .about__image-wrapper {
+                margin-bottom: 0;
+            }
+            
+            .about__stats {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            position: relative;
+            background-color: var(--secondary-light);
+        }
+
+        .testimonials__header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+
+        .testimonials__title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-md);
+        }
+
+        .testimonials__title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .testimonials__subtitle {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--neutral-600);
+        }
+
+        .testimonials__slider {
+            position: relative;
+            overflow: hidden;
+            padding: var(--space-sm);
+        }
+
+        .testimonials__track {
+            display: flex;
+            transition: transform var(--transition-slow) ease;
+        }
+
+        .testimonial {
+            min-width: 100%;
+            padding: 0 var(--space-md);
+            flex-shrink: 0;
+        }
+
+        .testimonial__card {
+            background-color: var(--neutral-100);
+            border-radius: var(--radius-lg);
+            padding: var(--space-xl);
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+
+        .testimonial__card::before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            position: absolute;
+            top: var(--space-sm);
+            left: var(--space-sm);
+            font-size: 5rem;
+            color: var(--secondary-dark);
+            line-height: 1;
+            opacity: 0.3;
+        }
+
+        .testimonial__content {
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+            margin-bottom: var(--space-md);
+            color: var(--neutral-700);
+        }
+
+        .testimonial__rating {
+            display: flex;
+            gap: 2px;
+            color: var(--warning);
+            margin-bottom: var(--space-md);
+        }
+
+        .testimonial__author {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .testimonial__author-image {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            object-fit: cover;
+            border: 2px solid var(--primary-light);
+        }
+
+        .testimonial__author-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testimonial__author-name {
+            font-weight: 600;
+            color: var(--neutral-800);
+        }
+
+        .testimonial__author-title {
+            font-size: var(--font-size-sm);
+            color: var(--neutral-500);
+        }
+
+        .testimonials__controls {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin-top: var(--space-lg);
+        }
+
+        .testimonials__button {
+            background: var(--neutral-100);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+            color: var(--primary);
+            transition: all var(--transition-base) ease;
+        }
+
+        .testimonials__button:hover {
+            background: var(--primary);
+            color: var(--neutral-100);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        .testimonials__indicators {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-xs);
+            margin-top: var(--space-md);
+        }
+
+        .testimonials__indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: var(--radius-full);
+            background-color: var(--neutral-300);
+            cursor: pointer;
+            transition: all var(--transition-base) ease;
+        }
+
+        .testimonials__indicator.active {
+            background-color: var(--primary);
+            width: 20px;
+        }
+
+        @media (min-width: 1024px) {
+            .testimonial {
+                min-width: calc(100% / 3);
+            }
+        }
+
+        /* Contact Section */
+        .contact {
+            position: relative;
+        }
+
+        .contact__container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact__header {
+            margin-bottom: var(--space-lg);
+        }
+
+        .contact__title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: var(--space-md);
+        }
+
+        .contact__title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .contact__subtitle {
+            color: var(--neutral-600);
+        }
+
+        .contact__content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+        }
+
+        .contact__form-container {
+            background-color: var(--neutral-100);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            padding: var(--space-lg);
+        }
+
+        .contact__form {
+            display: grid;
+            gap: var(--space-md);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .form-label {
+            font-weight: 500;
+            font-size: var(--font-size-sm);
+            color: var(--neutral-700);
+        }
+
+        .form-input,
+        .form-textarea {
+            padding: var(--space-sm);
+            border: 1px solid var(--neutral-300);
+            border-radius: var(--radius-md);
+            font-family: var(--font-body);
+            font-size: var(--font-size-base);
+            transition: border-color var(--transition-base) ease, box-shadow var(--transition-base) ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(57, 168, 162, 0.1);
+        }
+
+        .form-input.error,
+        .form-textarea.error {
+            border-color: var(--error);
+        }
+
+        .form-error {
+            color: var(--error);
+            font-size: var(--font-size-xs);
+            margin-top: 2px;
+        }
+
+        .form-textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            justify-self: start;
+            margin-top: var(--space-sm);
+        }
+
+        .contact__info {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-lg);
+        }
+
+        .contact__info-item {
+            display: flex;
+            gap: var(--space-sm);
+        }
+
+        .contact__info-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: var(--font-size-lg);
+        }
+
+        .contact__info-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact__info-title {
+            font-weight: 600;
+            color: var(--neutral-800);
+            margin-bottom: 4px;
+        }
+
+        .contact__info-text {
+            color: var(--neutral-600);
+            margin-bottom: 0;
+        }
+
+        .contact__map {
+            height: 250px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-top: var(--space-lg);
+        }
+
+        .contact__map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        @media (min-width: 1024px) {
+            .contact__content {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .contact__map {
+                height: 300px;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--neutral-800);
+            color: var(--neutral-400);
+            padding: var(--space-xl) 0;
+        }
+
+        .footer__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+        }
+
+        .footer__column {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+
+        .footer__logo {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-xl);
+            font-weight: 700;
+            color: var(--neutral-100);
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer__logo-icon {
+            margin-right: var(--space-xs);
+            color: var(--primary);
+        }
+
+        .footer__description {
+            color: var(--neutral-400);
+        }
+
+        .footer__title {
+            color: var(--neutral-100);
+            font-size: var(--font-size-md);
+            margin-bottom: var(--space-sm);
+            position: relative;
+            padding-bottom: var(--space-xs);
+        }
+
+        .footer__title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        .footer__links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-xs);
+        }
+
+        .footer__link {
+            color: var(--neutral-400);
+            transition: color var(--transition-base) ease, transform var(--transition-base) ease;
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+
+        .footer__link:hover {
+            color: var(--primary-light);
+            transform: translateX(5px);
+        }
+
+        .footer__social {
+            display: flex;
+            gap: var(--space-sm);
+            margin-top: var(--space-xs);
+        }
+
+        .footer__social-link {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-full);
+            background-color: var(--neutral-700);
+            color: var(--neutral-100);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-base) ease;
+        }
+
+        .footer__social-link:hover {
+            background-color: var(--primary);
+            color: var(--neutral-100);
+            transform: translateY(-3px);
+        }
+
+        .footer__bottom {
+            border-top: 1px solid var(--neutral-700);
+            padding-top: var(--space-md);
+            margin-top: var(--space-lg);
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            text-align: center;
+        }
+
+        .footer__copyright {
+            color: var(--neutral-500);
+            font-size: var(--font-size-sm);
+        }
+
+        .footer__policies {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+        }
+
+        .footer__policy-link {
+            color: var(--neutral-400);
+            font-size: var(--font-size-sm);
+        }
+
+        .footer__policy-link:hover {
+            color: var(--primary-light);
+        }
+
+        @media (min-width: 640px) {
+            .footer__container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer__bottom {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .footer__container {
+                grid-template-columns: 2fr 1fr 1fr 1fr;
+            }
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-sm {
+            margin-top: var(--space-sm);
+        }
+
+        .mt-md {
+            margin-top: var(--space-md);
+        }
+
+        .mt-lg {
+            margin-top: var(--space-lg);
+        }
+
+        .mb-sm {
+            margin-bottom: var(--space-sm);
+        }
+
+        .mb-md {
+            margin-bottom: var(--space-md);
+        }
+
+        .mb-lg {
+            margin-bottom: var(--space-lg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <i class="fa-solid fa-spine header__logo-icon"></i>
+                <span>Posture & Scoliosis Institute</span>
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li><a href="#home" class="header__nav-link active">Home</a></li>
+                    <li><a href="#services" class="header__nav-link">Services</a></li>
+                    <li><a href="#about" class="header__nav-link">About</a></li>
+                    <li><a href="#testimonials" class="header__nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="header__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="btn btn--primary header__cta">Schedule Consultation</a>
+            <button class="header__mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <button class="mobile-nav__close" id="mobile-close" aria-label="Close menu">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+                <a href="#home" class="mobile-nav__link">Home</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#services" class="mobile-nav__link">Services</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#about" class="mobile-nav__link">About</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#testimonials" class="mobile-nav__link">Testimonials</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="#contact" class="mobile-nav__link">Contact</a>
+            </li>
+        </ul>
+        <a href="#contact" class="btn btn--primary mobile-nav__cta">Schedule Consultation</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+        <div class="container hero__container">
+            <div class="hero__content animate-fade-in">
+                <h1 class="hero__title">Specialized Scoliosis Care & Posture Correction</h1>
+                <p class="hero__subtitle">Scottsdale's premier chiropractic clinic dedicated to improving spinal health and overall wellness through evidence-based treatments.</p>
+                <div class="hero__cta-group">
+                    <a href="#contact" class="btn btn--secondary btn--large">Schedule Consultation</a>
+                    <a href="#services" class="btn btn--primary btn--large">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero__image-container">
+                <div class="hero__image">
+                    <img src="https://media.licdn.com/dms/image/v2/C4D03AQE1or2SUgq3dg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646936707849?e=1750896000&v=beta&t=P1fZKeDLhowqIxpnFw1z81zEsDlCixAR1o2tq4PWs5A" alt="Dr. Andrew Kellogg, Chiropractor at Posture & Scoliosis Institute" width="600" height="600">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section--alt" id="services">
+        <div class="container">
+            <div class="section__header text-center mb-lg">
+                <h2 class="section__title">Our Specialized Services</h2>
+                <p class="section__subtitle">Comprehensive care tailored to your unique spinal health needs</p>
+            </div>
+            <div class="grid grid--services">
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fa-solid fa-x-ray"></i>
+                    </div>
+                    <h3 class="service-card__title">Scoliosis Assessment</h3>
+                    <p class="service-card__description">Comprehensive evaluation using advanced imaging and analysis to identify the severity and type of scoliosis, creating the foundation for effective treatment.</p>
+                    <a href="#contact" class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fa-solid fa-person-walking"></i>
+                    </div>
+                    <h3 class="service-card__title">Posture Correction</h3>
+                    <p class="service-card__description">Customized programs to address poor posture habits, reducing pain and preventing long-term complications from slouching, forward head posture, and other common issues.</p>
+                    <a href="#contact" class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="service-card__title">Pediatric Scoliosis Care</h3>
+                    <p class="service-card__description">Early intervention and management strategies for adolescent idiopathic scoliosis, helping to prevent progression during critical growth periods.</p>
+                    <a href="#contact" class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fa-solid fa-hands"></i>
+                    </div>
+                    <h3 class="service-card__title">Spinal Adjustments</h3>
+                    <p class="service-card__description">Precise manual and instrument-assisted adjustments to improve spinal alignment, reduce pain, and enhance overall nervous system function.</p>
+                    <a href="#contact" class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3 class="service-card__title">Corrective Exercises</h3>
+                    <p class="service-card__description">Personalized exercise programs designed to strengthen weak muscles, improve flexibility, and reinforce proper alignment for long-term spinal health.</p>
+                    <a href="#contact" class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="service-card__title">Wellness Consultation</h3>
+                    <p class="service-card__description">Holistic approach to spinal health that includes nutritional guidance, lifestyle recommendations, and ergonomic advice to support your overall wellbeing.</p>
+                    <a href="#contact" class="service-card__link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container about__container">
+            <div class="about__image-wrapper">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQE1or2SUgq3dg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646936707849?e=1750896000&v=beta&t=P1fZKeDLhowqIxpnFw1z81zEsDlCixAR1o2tq4PWs5A" alt="Dr. Andrew Kellogg" class="about__image">
+                <div class="about__overlay">
+                    <h3 class="about__name">Dr. Andrew Kellogg</h3>
+                    <p class="about__title">Chiropractor & Founder</p>
+                </div>
+            </div>
+            <div class="about__content">
+                <h2 class="section__title">About Dr. Andrew Kellogg</h2>
+                <p>Dr. Andrew Kellogg is the founder and lead chiropractor at the Posture & Scoliosis Institute in Sarasota, bringing extensive expertise in spinal health and corrective care to every patient interaction.</p>
+                
+                <div class="about__highlight">
+                    <p>"My mission is to help patients achieve optimal spinal health through evidence-based approaches tailored to their unique needs, with a special focus on posture correction and scoliosis management."</p>
+                </div>
+                
+                <p>With over 7 years of experience co-owning a successful Functional Wellness Center, Dr. Kellogg has developed specialized techniques for addressing complex spinal conditions. His commitment to continued education ensures patients receive the most current and effective treatment options available.</p>
+                
+                <p>The Posture & Scoliosis Institute was founded on the principle that proper spinal alignment is fundamental to overall health and well-being. Dr. Kellogg's comprehensive approach addresses not just symptoms, but the underlying causes of spinal dysfunction.</p>
+                
+                <div class="about__stats">
+                    <div class="stat">
+                        <div class="stat__number">7+</div>
+                        <div class="stat__label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">1000+</div>
+                        <div class="stat__label">Patients Treated</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">100+</div>
+                        <div class="stat__label">Scoliosis Cases</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">4.9</div>
+                        <div class="stat__label">Star Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+        <div class="container">
+            <div class="testimonials__header">
+                <h2 class="testimonials__title">Patient Success Stories</h2>
+                <p class="testimonials__subtitle">Hear from our patients who have experienced life-changing results through our specialized care</p>
+            </div>
+            <div class="testimonials__slider" id="testimonials-slider">
+                <div class="testimonials__track" id="testimonials-track">
+                    <div class="testimonial">
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial__content">After years of living with scoliosis pain, Dr. Kellogg's treatment plan gave me back my quality of life. His focused approach and personalized care made all the difference. I've regained mobility I thought was lost forever!</p>
+                            <div class="testimonial__author">
+                                <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Sarah M." class="testimonial__author-image">
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Sarah M.</div>
+                                    <div class="testimonial__author-title">Scoliosis Patient</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial__content">My teenage daughter's scoliosis was progressing rapidly, and Dr. Kellogg developed a comprehensive plan that stabilized her curve and significantly reduced her discomfort. His expertise in adolescent scoliosis is truly exceptional.</p>
+                            <div class="testimonial__author">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="testimonial__author-image">
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Michael T.</div>
+                                    <div class="testimonial__author-title">Parent of Patient</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <p class="testimonial__content">Working at a desk for years had destroyed my posture and caused constant neck pain. Dr. Kellogg's posture correction program and adjustments have transformed how I feel. I stand taller and the chronic pain is gone!</p>
+                            <div class="testimonial__author">
+                                <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Jennifer K." class="testimonial__author-image">
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Jennifer K.</div>
+                                    <div class="testimonial__author-title">Posture Correction Patient</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial__content">As an active senior, I was devastated when back pain limited my golf game. Dr. Kellogg's holistic approach addressed not just my spine but my overall wellness. I'm back on the course and feeling better than I have in years!</p>
+                            <div class="testimonial__author">
+                                <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Robert J." class="testimonial__author-image">
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Robert J.</div>
+                                    <div class="testimonial__author-title">Senior Wellness Patient</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial__card">
+                            <div class="testimonial__rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="testimonial__content">Dr. Kellogg's expertise in corrective exercises has been life-changing. The personalized program he created addressed my specific needs, and his attentive care throughout the process made all the difference in my recovery.</p>
+                            <div class="testimonial__author">
+                                <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Lisa M." class="testimonial__author-image">
+                                <div class="testimonial__author-info">
+                                    <div class="testimonial__author-name">Lisa M.</div>
+                                    <div class="testimonial__author-title">Corrective Exercise Patient</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__controls">
+                    <button class="testimonials__button" id="testimonial-prev" aria-label="Previous testimonial">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="testimonials__button" id="testimonial-next" aria-label="Next testimonial">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="testimonials__indicators" id="testimonial-indicators">
+                    <span class="testimonials__indicator active" data-index="0"></span>
+                    <span class="testimonials__indicator" data-index="1"></span>
+                    <span class="testimonials__indicator" data-index="2"></span>
+                    <span class="testimonials__indicator" data-index="3"></span>
+                    <span class="testimonials__indicator" data-index="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container contact__container">
+            <div class="contact__header">
+                <h2 class="contact__title">Schedule Your Consultation</h2>
+                <p class="contact__subtitle">Take the first step toward improved spinal health and posture</p>
+            </div>
+            <div class="contact__content">
+                <div class="contact__form-container">
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        <div class="grid grid--2">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                                <span class="form-error" id="phone-error"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Service Interested In</label>
+                            <select id="service" name="service" class="form-input">
+                                <option value="">Select a service</option>
+                                <option value="scoliosis">Scoliosis Assessment</option>
+                                <option value="posture">Posture Correction</option>
+                                <option value="pediatric">Pediatric Scoliosis Care</option>
+                                <option value="adjustments">Spinal Adjustments</option>
+                                <option value="exercises">Corrective Exercises</option>
+                                <option value="wellness">Wellness Consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Health Concerns</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large form-submit">Request Appointment</button>
+                    </form>
+                </div>
+                <div class="contact__info">
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact__info-content">
+                            <h3 class="contact__info-title">Office Location</h3>
+                            <p class="contact__info-text">Posture & Scoliosis Institute<br>123 Wellness Boulevard<br>Sarasota, FL 34236</p>
+                        </div>
+                    </div>
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="contact__info-content">
+                            <h3 class="contact__info-title">Office Hours</h3>
+                            <p class="contact__info-text">
+                                Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                Saturday: 9:00 AM - 1:00 PM<br>
+                                Sunday: Closed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact__info-item">
+                        <div class="contact__info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact__info-content">
+                            <h3 class="contact__info-title">Contact Information</h3>
+                            <p class="contact__info-text">
+                                Phone: (941) 555-0123<br>
+                                Email: info@posturescoliosis.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56047.01508033573!2d-82.56440368715816!3d27.336914300000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c340f8926c99eb%3A0x65a5c9ea9bbc6e03!2sSarasota%2C%20FL!5e0!3m2!1sen!2sus!4v1719364805147!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office Location Map"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column">
+                <a href="#" class="footer__logo">
+                    <i class="fa-solid fa-spine footer__logo-icon"></i>
+                    <span>Posture & Scoliosis Institute</span>
+                </a>
+                <p class="footer__description">Providing specialized chiropractic care focused on scoliosis management and posture correction to improve quality of life and overall wellness.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__links">
+                    <li><a href="#home" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#services" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#about" class="footer__link"><i class="fa-solid fa-chevron-right"></i> About Dr. Kellogg</a></li>
+                    <li><a href="#testimonials" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Patient Stories</a></li>
+                    <li><a href="#contact" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Our Services</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Scoliosis Assessment</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Posture Correction</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Pediatric Scoliosis Care</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Spinal Adjustments</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Corrective Exercises</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Wellness Consultation</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h3 class="footer__title">Resources</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Scoliosis Facts</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Posture Tips</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Patient Forms</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Insurance Information</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> Blog</a></li>
+                    <li><a href="#" class="footer__link"><i class="fa-solid fa-chevron-right"></i> FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <div class="footer__copyright">
+                &copy; <span id="current-year">2023</span> Posture & Scoliosis Institute. All rights reserved.
+            </div>
+            <div class="footer__policies">
+                <a href="#" class="footer__policy-link">Privacy Policy</a>
+                <a href="#" class="footer__policy-link">Terms of Service</a>
+                <a href="#" class="footer__policy-link">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const mobileClose = document.getElementById('mobile-close');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileLinks = document.querySelectorAll('.mobile-nav__link');
+
+        mobileToggle.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        mobileClose.addEventListener('click', () => {
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Sticky Header
+        const header = document.getElementById('header');
+        let lastScrollPosition = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollPosition = window.pageYOffset;
+            
+            if (currentScrollPosition > 100) {
+                header.style.padding = '5px 0';
+                header.style.boxShadow = 'var(--shadow-md)';
+            } else {
+                header.style.padding = '';
+                header.style.boxShadow = '';
+            }
+            
+            lastScrollPosition = currentScrollPosition;
+        });
+
+        // Testimonials Slider
+        const testimonialsTrack = document.getElementById('testimonials-track');
+        const testimonialPrev = document.getElementById('testimonial-prev');
+        const testimonialNext = document.getElementById('testimonial-next');
+        const testimonialIndicators = document.querySelectorAll('.testimonials__indicator');
+        
+        let currentSlide = 0;
+        let slideWidth;
+        let slidesPerView = 1;
+        
+        function updateSlidesPerView() {
+            if (window.innerWidth >= 1024) {
+                slidesPerView = 3;
+            } else if (window.innerWidth >= 640) {
+                slidesPerView = 2;
+            } else {
+                slidesPerView = 1;
+            }
+        }
+        
+        function updateSlideWidth() {
+            updateSlidesPerView();
+            slideWidth = document.querySelector('.testimonial').offsetWidth;
+            goToSlide(currentSlide);
+        }
+        
+        function goToSlide(slideIndex) {
+            const maxSlide = document.querySelectorAll('.testimonial').length - slidesPerView;
+            currentSlide = Math.max(0, Math.min(slideIndex, maxSlide));
+            
+            testimonialsTrack.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+            
+            // Update indicators
+            testimonialIndicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        testimonialPrev.addEventListener('click', () => {
+            goToSlide(currentSlide - 1);
+        });
+        
+        testimonialNext.addEventListener('click', () => {
+            goToSlide(currentSlide + 1);
+        });
+        
+        testimonialIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                goToSlide(index);
+            });
+        });
+        
+        // Auto advance testimonials
+        let testimonialInterval;
+        
+        function startTestimonialInterval() {
+            testimonialInterval = setInterval(() => {
+                const nextSlide = (currentSlide + 1) % (document.querySelectorAll('.testimonial').length - slidesPerView + 1);
+                goToSlide(nextSlide);
+            }, 5000);
+        }
+        
+        function resetTestimonialInterval() {
+            clearInterval(testimonialInterval);
+            startTestimonialInterval();
+        }
+        
+        testimonialPrev.addEventListener('click', resetTestimonialInterval);
+        testimonialNext.addEventListener('click', resetTestimonialInterval);
+        testimonialIndicators.forEach(indicator => {
+            indicator.addEventListener('click', resetTestimonialInterval);
+        });
+        
+        // Initialize testimonial slider
+        window.addEventListener('load', () => {
+            updateSlideWidth();
+            startTestimonialInterval();
+        });
+        
+        window.addEventListener('resize', updateSlideWidth);
+
+        // Form Validation
+        const contactForm = document.getElementById('contact-form');
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+        const nameError = document.getElementById('name-error');
+        const emailError = document.getElementById('email-error');
+        const phoneError = document.getElementById('phone-error');
+
+        function validateEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+
+        function validatePhone(phone) {
+            const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+            return re.test(String(phone));
+        }
+
+        nameInput.addEventListener('input', () => {
+            if (nameInput.value.trim().length < 2) {
+                nameInput.classList.add('error');
+                nameError.textContent = 'Please enter your full name';
+            } else {
+                nameInput.classList.remove('error');
+                nameError.textContent = '';
+            }
+        });
+
+        emailInput.addEventListener('input', () => {
+            if (!validateEmail(emailInput.value.trim())) {
+                emailInput.classList.add('error');
+                emailError.textContent = 'Please enter a valid email address';
+            } else {
+                emailInput.classList.remove('error');
+                emailError.textContent = '';
+            }
+        });
+
+        phoneInput.addEventListener('input', () => {
+            if (!validatePhone(phoneInput.value.trim())) {
+                phoneInput.classList.add('error');
+                phoneError.textContent = 'Please enter a valid phone number';
+            } else {
+                phoneInput.classList.remove('error');
+                phoneError.textContent = '';
+            }
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            if (nameInput.value.trim().length < 2) {
+                nameInput.classList.add('error');
+                nameError.textContent = 'Please enter your full name';
+                isValid = false;
+            }
+            
+            if (!validateEmail(emailInput.value.trim())) {
+                emailInput.classList.add('error');
+                emailError.textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            if (!validatePhone(phoneInput.value.trim())) {
+                phoneInput.classList.add('error');
+                phoneError.textContent = 'Please enter a valid phone number';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Form submission would happen here
+                alert('Thank you for your submission! We will contact you shortly to schedule your consultation.');
+                contactForm.reset();
+            }
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.header__nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - headerHeight - 100;
+                const sectionHeight = section.offsetHeight;
+                
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
